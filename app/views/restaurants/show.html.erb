@@ -1,0 +1,6 @@
+<h2><%=@restaurant.name%></h2>
+<p><%=@restaurant.adress%></p>
+<p><%=@restaurant.category%></p>
+
+<%= link_to 'retour', restaurants_path%>
+<%= link_to "supprimer", restaurant_path(@restaurant), method: :delete, data: {confirm: "tu es sur?"}%>
